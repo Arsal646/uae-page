@@ -1,870 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>International Cargo Shipping from India | Air & Sea Freight Services</title>
-  <meta name="description" content="Professional cargo shipping services from India to global destinations. Fast air freight, economical sea shipping, customs clearance & door-to-door delivery. Get free quote!">
-  <meta name="keywords" content="shipping from India, cargo India, freight forwarding India, international shipping India, export services India">
-  <link rel="canonical" href="https://www.yourdomain.com/shipping-cargo-from-india" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping from India - Content Outline with Search Queries</title>
   <style>
-    :root {
-      --primary-color: #007bff;
-      --primary-hover: #0056b3;
-      --bg-light: #f0f0f0;
-      --card-bg: #ffffff;
-      --card-hover: #f8f9fa;
-      --text-color: #333;
-      --accent-color: #e0e0e0;
-      --border-radius: 8px;
-      --info-color: #17a2b8;
-      --sea-color: #1e88e5;
-      --air-color: #e53935;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fafafa;
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
       line-height: 1.6;
-      font-size: 16px;
-    }
-
-    #app {
+      color: #333;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 15px;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
-
-    header, section {
+    
+    .container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    
+    h1 {
+      color: #0A3A68;
+      border-bottom: 2px solid #0A3A68;
+      padding-bottom: 10px;
       margin-bottom: 30px;
     }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #0A3A68;
-    }
-
+    
     h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1.25rem;
       color: #0A3A68;
+      margin-top: 40px;
+      padding-left: 15px;
+      border-left: 4px solid #0A3A68;
     }
-
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    h4 {
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-      font-size: 1rem;
-    }
-
+    
     .section {
-      background-color: var(--bg-light);
-      padding: 25px;
-      border-radius: var(--border-radius);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      margin-bottom: 25px;
-    }
-
-    .destinations-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .destination-card {
-      background-color: var(--card-bg);
-      padding: 15px 10px;
-      text-align: center;
-      text-decoration: none;
-      color: var(--text-color);
-      border-radius: var(--border-radius);
-      border: 1px solid var(--accent-color);
-      transition: all 0.3s ease;
-      font-size: 0.95rem;
-    }
-
-    .destination-card:hover {
-      background-color: var(--card-hover);
-      transform: translateY(-3px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-      font-size: 0.95rem;
-    }
-
-    .cta a {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: var(--border-radius);
-      display: inline-block;
-      font-weight: bold;
-      transition: background-color 0.3s;
-      font-size: 1rem;
-    }
-
-    .cta a:hover {
-      background-color: var(--primary-hover);
-    }
-
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .faq-question {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    
-    .highlight-box {
-      background-color: #fff8e1;
-      border-left: 4px solid #ffc107;
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: var(--border-radius);
-      display: none;
-    }
-    
-    .query-list {
-      background-color: #f8f9fa;
-      border-left: 4px solid var(--info-color);
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 4px;
-    }
-
-    .query-list h4 {
-      margin-top: 0;
-      color: var(--info-color);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 1.1rem;
-    }
-
-    .query-list ul {
-      margin-bottom: 0;
-    }
-
-    .query-list li {
-      margin-bottom: 5px;
-      position: relative;
-      padding-left: 20px;
-      font-size: 0.95rem;
-    }
-
-    .query-list li:before {
-      content: "•";
-      color: var(--info-color);
-      font-weight: bold;
-      position: absolute;
-      left: 0;
-    }
-
-    /* Ports Section Styling */
-    .ports-section {
-      margin-top: 30px;
-    }
-    
-    .ports-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    
-    .port-type {
-      background-color: white;
+      background: #f5f7fa;
+      border-radius: 6px;
       padding: 20px;
-      border-radius: var(--border-radius);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      margin: 20px 0;
+      border-left: 4px solid #007bff;
     }
     
-    .port-type:hover {
-      transform: translateY(-5px);
-    }
-    
-    .port-type.sea {
-      border-top: 4px solid var(--sea-color);
-    }
-    
-    .port-type.air {
-      border-top: 4px solid var(--air-color);
-    }
-    
-    .port-type h3 {
+    .section h3 {
       margin-top: 0;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.3rem;
+      color: #007bff;
     }
     
-    .port-type.sea h3 {
-      color: var(--sea-color);
-    }
-    
-    .port-type.air h3 {
-      color: var(--air-color);
-    }
-    
-    .port-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    
-    .port-item {
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 1px dashed #eee;
-    }
-    
-    .port-item:last-child {
-      border-bottom: none;
-    }
-    
-    .port-name {
-      font-weight: bold;
-      font-size: 1rem;
-      margin-bottom: 5px;
-      display: block;
-    }
-    
-    .port-content {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    
-    /* Step-by-Step Guide Styling */
-    .step-item {
-      margin-bottom: 15px;
+    .section-content {
       padding: 15px;
-      background-color: #fff;
-      border-radius: var(--border-radius);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 4px;
+      margin-top: 15px;
+      border: 1px solid #e1e4e8;
     }
     
-    .step-number {
+    .subsection {
+      margin: 15px 0;
+      padding-left: 15px;
+      border-left: 2px dashed #ccc;
+    }
+    
+    .subsection h4 {
+      color: #555;
+      margin-bottom: 10px;
+    }
+    
+    ul.features {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    ul.features li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    ul.features li:before {
+      content: "•";
+      color: #007bff;
       font-weight: bold;
-      color: var(--primary-color);
       margin-right: 10px;
     }
     
-    /* Shipping Routes Styling */
-    .routes-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    
-    .route-item {
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 1px dashed #eee;
-    }
-    
-    .route-item:last-child {
-      border-bottom: none;
-    }
-    
-    .route-name {
-      font-weight: bold;
-      font-size: 1rem;
+    .tag {
+      display: inline-block;
+      background: #e1f0ff;
+      color: #007bff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.8em;
+      margin-right: 5px;
       margin-bottom: 5px;
-      display: block;
     }
     
-    .route-content {
-      font-size: 0.9rem;
-      color: #555;
+    .query-box {
+      background: #f8f9fa;
+      border-left: 4px solid #17a2b8;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 4px;
     }
     
-    /* Responsive adjustments */
+    .query-box h4 {
+      color: #17a2b8;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .query-box h4 i {
+      margin-right: 8px;
+    }
+    
+    .query-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    
+    .query-tag {
+      background: #d1ecf1;
+      color: #0c5460;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      display: flex;
+      align-items: center;
+    }
+    
+    .query-tag i {
+      margin-right: 5px;
+      font-size: 0.9em;
+    }
+    
     @media (max-width: 768px) {
       body {
-        font-size: 15px;
-      }
-      
-      #app {
         padding: 10px;
       }
       
-      .section {
-        padding: 20px;
-      }
-      
-      h1 {
-        font-size: 1.8rem;
-      }
-      
-      h2 {
-        font-size: 1.5rem;
-      }
-      
-      .ports-container {
-        grid-template-columns: 1fr;
-      }
-      
-      .destinations-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      body {
-        font-size: 14px;
-      }
-      
-      .section {
+      .container {
         padding: 15px;
       }
       
-      .port-type {
-        padding: 15px;
+      .query-tag {
+        font-size: 0.8em;
       }
-      
-      .port-type h3 {
-        font-size: 1.2rem;
-      }
-      
-      .step-item {
-        padding: 10px;
-      }
-    }
-
-    .planner{
-        text-align: center;
-        position:sticky;
-        top: 0;
-        background-color: #333;
-        color: white;
-        font-size: 14;
-        z-index: 1111;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        
-        
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="planner">
-            <div >
-
-              
-                 Below are some section ideas.
-            </div>
+  <div class="container">
+    <h1>International Shipping from India - Content Outline with Search Queries</h1>
+    
+    <!-- Introduction Section -->
+    <div class="section">
+      <h3>1. Introduction Section</h3>
+      <div class="section-content">
+        <p>Overview of international shipping services from India with key highlights.</p>
+        <ul class="features">
+          <li>Main heading with primary keyword</li>
+          <li>Brief introduction about shipping services</li>
+          <li>Key statistics about Indian exports</li>
+          <li>Highlight box with important information</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> international shipping services from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> best cargo companies in India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> India export shipping overview</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> top Indian freight forwarders</span>
+          </div>
+        </div>
+        
+        <div>
+          <span class="tag">h1</span>
+          <span class="tag">p</span>
+          <span class="tag">div.highlight-box</span>
+        </div>
+      </div>
     </div>
-  <div id="app"></div>
-
-  <script>
-    const shippingData = {
-      origin_country: "India",
-      page_title: "International Cargo Shipping from India | Air & Sea Freight Services",
-      meta_description: "Professional cargo shipping services from India to global destinations. Fast air freight, economical sea shipping, customs clearance & door-to-door delivery. Get free quote!",
-      
-      introduction: `<h1>International Cargo Shipping from India | Air & Sea Freight Services</h1>
-      <p>As one of India's leading freight forwarders, we specialize in seamless international cargo shipments from all major Indian ports and airports. Whether you need express air freight or cost-effective sea containers, our solutions are tailored to India's unique export requirements.</p>
-      
-      <div class="highlight-box">
-        <h3>India's Top Export Shipping Routes</h3>
-        <p>The United States, United Arab Emirates, and United Kingdom account for over 30% of India's exports. We offer specialized services on these and hundreds of other global trade lanes with competitive rates and reliable transit times.</p>
-      </div>`,
-      
-      destinations: [
-        { name: "United States", url: "/shipping-cargo-from-india-to-united-states" },
-        { name: "United Kingdom", url: "/shipping-cargo-from-india-to-united-kingdom" },
-        { name: "Germany", url: "/shipping-cargo-from-india-to-germany" },
-        { name: "Australia", url: "/shipping-cargo-from-india-to-australia" },
-        { name: "Canada", url: "/shipping-cargo-from-india-to-canada" },
-        { name: "Japan", url: "/shipping-cargo-from-india-to-japan" },
-        { name: "Brazil", url: "/shipping-cargo-from-india-to-brazil" },
-        { name: "South Africa", url: "/shipping-cargo-from-india-to-south-africa" },
-        { name: "China", url: "/shipping-cargo-from-india-to-china" },
-        { name: "United Arab Emirates", url: "/shipping-cargo-from-india-to-united-arab-emirates" },
-        { name: "Singapore", url: "/shipping-cargo-from-india-to-singapore" },
-        { name: "France", url: "/shipping-cargo-from-india-to-france" },
-        { name: "Italy", url: "/shipping-cargo-from-india-to-italy" },
-        { name: "Spain", url: "/shipping-cargo-from-india-to-spain" },
-        { name: "Russia", url: "/shipping-cargo-from-india-to-russia" }
-      ],
-      
-      destination_queries: [
-        "countries I can ship to from India",
-        "best shipping routes from India",
-        "international shipping destinations from India",
-        "top export markets from India",
-        "shipping from India to USA/UK/UAE"
-      ],
-      
-      shipping_methods: {
-        title: "Shipping Methods from India",
-        queries: [
-          "best shipping method from India",
-          "India air freight vs sea freight",
-          "fastest way to ship from India",
-          "cheapest shipping option from India",
-          "road freight options from India"
-        ],  
-      },
-      
-      port_services: {
-        title: "Major Indian Ports and Airports We Serve",
-        queries: [
-          "best port to export from India",
-          "major cargo airports in India",
-          "shipping from Mumbai port vs Chennai",
-          "JNPT port shipping services",
-          "Delhi airport cargo facilities"
-        ],   
-      },
-      
-      major_ports: {
-        sea_ports: [
-          { 
-            name: "Port of Mundra", 
-            content: "India’s largest commercial port, connecting to over 50 countries with Alliance’s optimized sea freight solutions.",
-            queries: [
-              "Mundra port global shipping connections",
-              "how Alliance Shipping uses Mundra port",
-              "export from Mundra port India"
-            ]
-          },
-          { 
-            name: "Port of Nhava Sheva (JNPT)", 
-            content: "Handles 50% of India’s container traffic, with Alliance ensuring fast customs and global routes.",
-            queries: [
-              "JNPT port international shipping",
-              "Alliance Shipping JNPT services",
-              "Nhava Sheva port global connections"
-            ]
-          },
-          { name: "Port of Chennai", content: "Key for South India exports, offering Alliance’s cost-effective sea routes to Asia and Europe." },
-          { name: "Port of Kolkata", content: "Ideal for eastern India, with Alliance streamlining shipments to Southeast Asia." },
-          { name: "Port of Visakhapatnam", content: "Major hub for bulk cargo, supported by Alliance’s tailored logistics." },
-          { name: "Port of Cochin", content: "Strategic for spices and perishables, with Alliance’s refrigerated shipping expertise." },
-          { name: "Port of Tuticorin", content: "Specialized in textile exports, backed by Alliance’s efficient sea freight." },
-          { name: "Port of Kandla", content: "Key for oil and chemicals, with Alliance’s safe handling solutions." },
-          { name: "Port of Paradip", content: "Major for minerals, supported by Alliance’s heavy cargo logistics." },
-          { name: "Port of Surat", content: "Emerging hub for diamonds and textiles, with Alliance’s fast connections." },
-          { name: "Port of New Mangalore", content: "Handles coffee and cashews, with Alliance’s reliable global routes." },
-          { name: "Port of Krishnapatnam", content: "Growing port for bulk goods, with Alliance’s seamless operations." },
-          { name: "Port of Haldia", content: "Supports eastern exports, with Alliance’s cost-efficient shipping." },
-          { name: "Port of Kakinada", content: "Key for rice exports, backed by Alliance’s specialized services." },
-          { name: "Port of Jamnagar", content: "Major for oil refining, with Alliance’s global logistics support." }
-        ],
-        air_ports: [
-          { 
-            name: "Chhatrapati Shivaji Maharaj International Airport (Mumbai)", 
-            content: "India’s busiest cargo airport, connecting to 90+ countries with Alliance’s express air freight.",
-            queries: [
-              "Mumbai airport cargo global connections",
-              "Alliance Shipping Mumbai airport services",
-              "export from Mumbai airport"
-            ]
-          },
-          { 
-            name: "Indira Gandhi International Airport (Delhi)", 
-            content: "Major hub for high-value goods, with Alliance’s fast customs and global air routes.",
-            queries: [
-              "Delhi airport international cargo",
-              "Alliance Shipping Delhi airport logistics",
-              "global shipping from Delhi airport"
-            ]
-          },
-          { name: "Kempegowda International Airport (Bengaluru)", content: "Key for electronics and pharma, with Alliance’s temperature-controlled air freight." },
-          { name: "Rajiv Gandhi International Airport (Hyderabad)", content: "Specialized in pharmaceuticals, backed by Alliance’s urgent air solutions." },
-          { name: "Sardar Vallabhbhai Patel International Airport (Ahmedabad)", content: "Growing hub for textiles, with Alliance’s efficient air routes." },
-          { name: "Pune International Airport", content: "Supports automotive parts, with Alliance’s rapid air logistics." },
-          { name: "Jaipur International Airport", content: "Key for gems and jewelry, with Alliance’s secure air freight." },
-          { name: "Surat International Airport", content: "Emerging for diamonds, backed by Alliance’s fast air connections." },
-          { name: "Chaudhary Charan Singh Airport (Lucknow)", content: "Handles handicrafts, with Alliance’s reliable air services." },
-          { name: "Coimbatore International Airport", content: "Key for textiles, supported by Alliance’s air freight expertise." },
-          { name: "Visakhapatnam International Airport", content: "Supports seafood exports, with Alliance’s refrigerated air solutions." },
-          { name: "Devi Ahilya Bai Holkar Airport (Indore)", content: "Growing for agro-products, with Alliance’s air logistics." },
-          { name: "Dr. Babasaheb Ambedkar International Airport (Nagpur)", content: "Handles oranges and goods, with Alliance’s air routes." },
-          { name: "Trivandrum International Airport", content: "Key for perishables, with Alliance’s fast air freight." },
-          { name: "Calicut International Airport", content: "Supports Middle East exports, with Alliance’s efficient air services." }
-        ]
-      },
-      
-      export_docs: {
-        title: "Essential Export Documents from India",
-        queries: [
-          "India export documentation checklist",
-          "required papers for shipping from India",
-          "commercial invoice India export",
-          "certificate of origin India",
-          "GST requirements for India exports"
-        ],   
-      },
-      
-      industry_solutions: {
-        title: "Industry-Specific Shipping Solutions from India",
-        queries: [
-          "shipping textiles from India",
-          "pharma export logistics India",
-          "automotive parts shipping from India",
-          "perishable goods export India",
-          "heavy machinery shipping India"
-        ]  
-      },
-      
-      seasonal_shipping: {
-        title: "Seasonal Shipping Considerations from India",
-        queries: [
-          "best time to ship from India",
-          "Diwali shipping season India",
-          "monsoon season shipping impact",
-          "financial year end exports India",
-          "holiday shipping deadlines India"
-        ]
-      },
-      
-      why_choose_alliance: {
-        title: "Why Choose Alliance Shipping for Your India Exports",
-        reasons: [
-          "Over 20 years of expertise in international freight forwarding from India",
-          "Dedicated customs clearance team ensuring compliance and speed",
-          "Real-time tracking for complete shipment visibility",
-          "Tailored solutions for industries like textiles, pharmaceuticals, and more",
-          "24/7 customer support for global coordination"
-        ],
-        queries: [
-          "why choose freight forwarder India",
-          "best cargo shipping company India",
-          "reliable shipping services from India",
-          "Alliance Shipping India reviews",
-          "benefits of shipping with Alliance"
-        ]
-      },
-      
-      faq: {
-        title: "Frequently Asked Questions About Shipping from India",
-        questions: [
-          {
-            question: "How long does it take to ship from India to the USA?",
-            answer: "Air freight takes 3-7 days, while sea freight takes 20-40 days, depending on the port and service."
-          },
-          {
-            question: "What documents are required for exporting from India?",
-            answer: "Key documents include a commercial invoice, packing list, bill of lading, and certificate of origin."
-          },
-          {
-            question: "Can you handle customs clearance?",
-            answer: "Yes, our team manages all customs documentation and compliance for smooth clearance."
-          },
-          {
-            question: "What is the cheapest way to ship from India?",
-            answer: "Sea freight is typically the most economical option for large or non-urgent shipments."
-          }
-        ],
-        queries: [
-          "common questions about India exports",
-          "India shipping FAQs",
-          "how to ship cargo from India",
-          "customs clearance queries India",
-          "cheapest shipping from India"
-        ]
-      },
-      
-      step_by_step_guide: {
-        title: "Step-by-Step Guide to Shipping from India",
-        steps: [
-          {
-            step: "Request a Quote",
-            description: "Contact Alliance Shipping for a tailored quote based on your cargo type, destination, and timeline."
-          },
-          {
-            step: "Prepare Documentation",
-            description: "Gather essential export documents like commercial invoice, packing list, and certificate of origin with our guidance."
-          },
-          {
-            step: "Choose Shipping Method",
-            description: "Select air, sea, or road freight based on speed and budget, with Alliance’s expert recommendations."
-          },
-          {
-            step: "Customs Clearance",
-            description: "Our team handles all customs paperwork and compliance to ensure smooth export from India."
-          },
-          {
-            step: "Track Your Shipment",
-            description: "Monitor your cargo in real-time with our 24/7 tracking system until it reaches its destination."
-          }
-        ],
-        queries: [
-          "how to ship cargo from India",
-          "India export process guide",
-          "steps for international shipping India",
-          "Alliance Shipping export process",
-          "beginner guide to shipping from India"
-        ]
-      },
-      
-      common_routes: {
-        title: "Most Common Shipping Routes from India",
-        routes: [
-          {
-            destination: "United States",
-            content: "A top export route for textiles and pharmaceuticals, with Alliance’s fast air freight (3-7 days) or economical sea freight (20-40 days) via Mundra and JNPT."
-          },
-          {
-            destination: "United Arab Emirates",
-            content: "Key for jewelry and electronics, with Alliance’s frequent sea shipments (7-10 days) from Mumbai and Chennai to Dubai and Abu Dhabi."
-          },
-          {
-            destination: "United Kingdom",
-            content: "Popular for automotive parts and garments, with Alliance’s reliable air (4-8 days) and sea routes (25-35 days) from Delhi and Nhava Sheva."
-          },
-          {
-            destination: "China",
-            content: "Major for chemicals and machinery, with Alliance’s optimized sea freight (10-15 days) from Chennai and Kolkata to Shanghai."
-          },
-          {
-            destination: "Singapore",
-            content: "Critical for electronics and spices, with Alliance’s swift sea routes (5-8 days) from Cochin and Tuticorin."
-          }
-        ],
-        queries: [
-          "most common shipping routes from India",
-          "top India export trade lanes",
-          "India to USA shipping route",
-          "India to UAE cargo routes",
-          "Alliance Shipping global routes"
-        ]
-      },
-      
-      cta_text: "Get Your Personalized Shipping Quote from India Today",
-      cta_url: "/get-quote"
-    };
-
-    function renderShippingPage(data) {
-      const app = document.getElementById('app');
-      document.title = data.page_title;
-      const metaDesc = document.querySelector('meta[name="description"]') || document.createElement('meta');
-      metaDesc.name = 'description';
-      metaDesc.content = data.meta_description;
-      document.head.appendChild(metaDesc);
-
-      app.innerHTML = `
-        <header>
-          ${data.introduction}
-        </header>
-
-        <section class="section">
-          <h2>Global Shipping Destinations from India</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.destination_queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
+    
+    <!-- Destinations Section -->
+    <div class="section">
+      <h3>2. Global Shipping Destinations</h3>
+      <div class="section-content">
+        <p>Showcase of countries we ship to from India with interactive elements.</p>
+        <ul class="features">
+          <li>Grid layout of destination countries</li>
+          <li>Clickable cards linking to country-specific pages</li>
+          <li>Search intent queries this section answers</li>
+          <li>Brief explanatory text</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> countries I can ship to from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> best shipping routes from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> international shipping destinations from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> shipping from India to USA/UK/UAE</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> top export markets from India</span>
           </div>
-          <p>We provide reliable cargo services from India to all major trade hubs worldwide, with specialized expertise in these key markets:</p>
-          <div class="destinations-grid">
-            ${data.destinations.map(d => `<a href="${d.url}" class="destination-card">${d.name}</a>`).join('')}
-          </div>
-          <p>Our network covers every continent with competitive rates and reliable transit times from all major Indian ports and airports.</p>
-        </section>
-
-        <section class="section">
-          <h2>${data.shipping_methods.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.shipping_methods.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2>${data.port_services.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.port_services.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
-          </div>
-          
-          <div class="ports-section">
-            <div class="ports-container">
-              <div class="port-type sea">
-                <h3><i class="fas fa-ship"></i> Major Sea Ports</h3>
-                <ul class="port-list">
-                  ${data.major_ports.sea_ports.map(port => `
-                    <li class="port-item">
-                      <span class="port-name">${port.name}</span>
-                      <p class="port-content">${port.content}</p>
-                      ${port.queries ? `
-                        <div class="query-list">
-                          <h4><i class="fas fa-info-circle"></i> Related searches:</h4>
-                          <ul>
-                            ${port.queries.map(query => `<li>${query}</li>`).join('')}
-                          </ul>
-                        </div>
-                      ` : ''}
-                    </li>
-                  `).join('')}
-                </ul>
-              </div>
-              
-              <div class="port-type air">
-                <h3><i class="fas fa-plane"></i> Major Airports</h3>
-                <ul class="port-list">
-                  ${data.major_ports.air_ports.map(port => `
-                    <li class="port-item">
-                      <span class="port-name">${port.name}</span>
-                      <p class="port-content">${port.content}</p>
-                      ${port.queries ? `
-                        <div class="query-list">
-                          <h4><i class="fas fa-info-circle"></i> Related searches:</h4>
-                          <ul>
-                            ${port.queries.map(query => `<li>${query}</li>`).join('')}
-                          </ul>
-                        </div>
-                      ` : ''}
-                    </li>
-                  `).join('')}
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <p class="highlight-box" style="margin-top: 20px;">
-            <strong>Expert Tip:</strong> Choosing the right port can reduce shipping costs by up to 30%. 
-            Our logistics specialists can help you select the optimal port based on your cargo type, 
-            destination, and timeline requirements.
-          </p>
-        </section>
-
-        <section class="section">
-          <h2>${data.industry_solutions.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.industry_solutions.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2>${data.seasonal_shipping.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.seasonal_shipping.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2>${data.step_by_step_guide.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.step_by_step_guide.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
-          </div>
-          <p>Follow these simple steps to ship your cargo from India with Alliance Shipping:</p>
-          <div>
-            ${data.step_by_step_guide.steps.map((step, index) => `
-              <div class="step-item">
-                <span class="step-number">Step ${index + 1}:</span>
-                <strong>${step.step}</strong>
-                <p>${step.description}</p>
-              </div>
-            `).join('')}
-          </div>
-        </section>
-
-        <section class="section">
-          <h2>${data.common_routes.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.common_routes.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
-          </div>
-          <p>India’s top export routes are powered by Alliance Shipping’s expertise in air and sea freight:</p>
-          <ul class="routes-list">
-            ${data.common_routes.routes.map(route => `
-              <li class="route-item">
-                <span class="route-name">${route.destination}</span>
-                <p class="route-content">${route.content}</p>
-              </li>
-            `).join('')}
+        </div>
+        
+        <div class="subsection">
+          <h4>Components:</h4>
+          <ul class="features">
+            <li>Destination cards with hover effects</li>
+            <li>Query list showing what users search for</li>
+            <li>Responsive grid layout</li>
           </ul>
-        </section>
-
-        <section class="section">
-          <h2>${data.why_choose_alliance.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.why_choose_alliance.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
+        </div>
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">div.destinations-grid</span>
+          <span class="tag">div.query-list</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Shipping Methods Section -->
+    <div class="section">
+      <h3>3. Shipping Methods</h3>
+      <div class="section-content">
+        <p>Comparison of different shipping options available from India.</p>
+        <ul class="features">
+          <li>Air freight vs sea freight comparison</li>
+          <li>Cost and speed analysis</li>
+          <li>Specialized shipping options</li>
+          <li>Search intent queries addressed</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> best shipping method from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> India air freight vs sea freight</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> fastest way to ship from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> cheapest shipping option from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> road freight options from India</span>
           </div>
-          <p>At Alliance Shipping, we deliver unmatched reliability and expertise for your international cargo needs:</p>
-          <ul>
-            ${data.why_choose_alliance.reasons.map(reason => `<li>${reason}</li>`).join('')}
+        </div>
+        
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">div.query-list</span>
+          <span class="tag">comparison table</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Ports Section -->
+    <div class="section">
+      <h3>4. Indian Ports & Airports</h3>
+      <div class="section-content">
+        <p>Detailed information about major shipping ports and airports in India.</p>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> best port to export from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> major cargo airports in India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> shipping from Mumbai port vs Chennai</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> JNPT port shipping services</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> Delhi airport cargo facilities</span>
+          </div>
+        </div>
+        
+        <div class="subsection">
+          <h4>Sea Ports</h4>
+          <ul class="features">
+            <li>List of 15 major sea ports</li>
+            <li>Details about each port's specialties</li>
+            <li>Related search queries for each port</li>
           </ul>
-        </section>
-
-        <section class="section">
-          <h2>${data.faq.title}</h2>
-          <div class="query-list">
-            <h4><i class="fas fa-info-circle"></i> This section will answers:</h4>
-            <ul>
-              ${data.faq.queries.map(query => `<li>${query}</li>`).join('')}
-            </ul>
+        </div>
+        <div class="subsection">
+          <h4>Airports</h4>
+          <ul class="features">
+            <li>List of 15 major cargo airports</li>
+            <li>Information about airport capabilities</li>
+            <li>Special handling facilities</li>
+          </ul>
+        </div>
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">div.ports-container</span>
+          <span class="tag">div.port-type</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Industry Solutions Section -->
+    <div class="section">
+      <h3>5. Industry-Specific Solutions</h3>
+      <div class="section-content">
+        <p>Tailored shipping solutions for different industries.</p>
+        <ul class="features">
+          <li>Textile and garment shipping</li>
+          <li>Pharmaceutical logistics</li>
+          <li>Automotive parts handling</li>
+          <li>Perishable goods solutions</li>
+          <li>Heavy machinery transport</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> shipping textiles from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> pharma export logistics India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> automotive parts shipping from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> perishable goods export India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> heavy machinery shipping India</span>
           </div>
-          ${data.faq.questions.map(q => `
-            <div>
-              <p class="faq-question">${q.question}</p>
-              <p>${q.answer}</p>
-            </div>
-          `).join('')}
-        </section>
-
-        <section class="section cta">
-          <h2>Ready to Ship from India?</h2>
-          <p>Our logistics experts will analyze your requirements and recommend the optimal shipping solution from India.</p>
-          <p><a href="${data.cta_url}">${data.cta_text}</a></p>
-          <p>Or speak directly with our India shipping specialists: +91 XX XXXX XXXX</p>
-        </section>
-      `;
-    }
-
-    renderShippingPage(shippingData);
-  </script>
+        </div>
+        
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">div.query-list</span>
+          <span class="tag">industry cards</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Step-by-Step Guide Section -->
+    <div class="section">
+      <h3>6. Shipping Process Guide</h3>
+      <div class="section-content">
+        <p>Step-by-step explanation of the shipping process from India.</p>
+        <ul class="features">
+          <li>5-step visual guide</li>
+          <li>Detailed description of each step</li>
+          <li>Numbered process flow</li>
+          <li>Search queries this section answers</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> how to ship cargo from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> India export process guide</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> steps for international shipping India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> beginner guide to shipping from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> Alliance Shipping export process</span>
+          </div>
+        </div>
+        
+        <div class="subsection">
+          <h4>Steps Include:</h4>
+          <ol>
+            <li>Requesting a quote</li>
+            <li>Document preparation</li>
+            <li>Shipping method selection</li>
+            <li>Customs clearance</li>
+            <li>Shipment tracking</li>
+          </ol>
+        </div>
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">div.step-item</span>
+          <span class="tag">ol</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Why Choose Us Section -->
+    <div class="section">
+      <h3>7. Why Choose Our Services</h3>
+      <div class="section-content">
+        <p>Key differentiators and value propositions.</p>
+        <ul class="features">
+          <li>20+ years of experience</li>
+          <li>Customs clearance expertise</li>
+          <li>Real-time tracking system</li>
+          <li>Industry-specific solutions</li>
+          <li>24/7 customer support</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> why choose freight forwarder India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> best cargo shipping company India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> reliable shipping services from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> Alliance Shipping India reviews</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> benefits of shipping with Alliance</span>
+          </div>
+        </div>
+        
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">ul</span>
+          <span class="tag">div.query-list</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <div class="section">
+      <h3>8. Frequently Asked Questions</h3>
+      <div class="section-content">
+        <p>Common questions about shipping from India.</p>
+        <ul class="features">
+          <li>Shipping times to major destinations</li>
+          <li>Documentation requirements</li>
+          <li>Customs clearance process</li>
+          <li>Cost-saving options</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> common questions about India exports</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> India shipping FAQs</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> how to ship cargo from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> customs clearance queries India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> cheapest shipping from India</span>
+          </div>
+        </div>
+        
+        <div class="subsection">
+          <h4>FAQ Format:</h4>
+          <p>Question in bold followed by detailed answer</p>
+        </div>
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">div.faq-question</span>
+          <span class="tag">div.query-list</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="section">
+      <h3>9. Call to Action</h3>
+      <div class="section-content">
+        <p>Final section encouraging user engagement.</p>
+        <ul class="features">
+          <li>Prominent quote request button</li>
+          <li>Direct contact information</li>
+          <li>Brief persuasive text</li>
+        </ul>
+        
+        <div class="query-box">
+          <h4><i class="fas fa-search"></i> Search Intent Queries We'll Answer:</h4>
+          <div class="query-tags">
+            <span class="query-tag"><i class="fas fa-question-circle"></i> get shipping quote from India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> contact freight forwarder India</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> Alliance Shipping contact number</span>
+            <span class="query-tag"><i class="fas fa-question-circle"></i> request export consultation</span>
+          </div>
+        </div>
+        
+        <div>
+          <span class="tag">h2</span>
+          <span class="tag">a.cta-button</span>
+          <span class="tag">contact info</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
