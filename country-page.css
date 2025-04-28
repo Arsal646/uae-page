@@ -753,7 +753,7 @@ transform: rotate(180deg);
   color: black !important;
 }
 
-.country-page .accordion-button p {
+.country-page .accordion-button span {
  flex:1;
 }
 
