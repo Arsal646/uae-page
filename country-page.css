@@ -752,3 +752,8 @@ transform: rotate(180deg);
 .country-page .accordion-button {
   color: black !important;
 }
+
+.country-page .accordion-button p {
+ flex:1;
+}
+
