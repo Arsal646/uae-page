@@ -755,6 +755,7 @@ transform: rotate(180deg);
 
 .country-page .accordion-button span {
  flex:1;
+  white-space: break-spaces;
 }
 
 
