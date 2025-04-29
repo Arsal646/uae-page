@@ -94,7 +94,7 @@ document.querySelectorAll('.process-item').forEach(item => {
 
 
 
-const words = ["India", "Pakistan", "China", "Germany", "United Kingdom", "United States"];
+const words = ["Russia", "Dubai", "Iran", "Germany","United State", "UK"];
 let wordIndex = 0;
 let charIndex = 0;
 let currentText = '';
