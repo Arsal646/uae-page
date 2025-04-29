@@ -743,6 +743,7 @@ transform: rotate(180deg);
 
 #content {
   max-width: 10000px;
+  padding:0;
 }
 
 .country-page .tab-button {
