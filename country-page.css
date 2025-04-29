@@ -662,7 +662,12 @@
  .country-page .section-title {
     font-size: 2rem;
   }
+
+  .country-page .destination-item {
+  font-size:12px;
 }
+}
+
 
 /* Animation */
 @keyframes pulse {
