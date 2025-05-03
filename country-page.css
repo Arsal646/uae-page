@@ -926,7 +926,7 @@ transform: rotate(180deg);
 }
 
 .shipping-pk-ru .quote-btn {
-  background-color: #0052cc;
+  background-color: var(--primary-color);
   color: white;
 }
 
