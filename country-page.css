@@ -532,6 +532,7 @@
 }
 
 .country-page .process-item {
+  flex-grow:1;
   width: 280px;
   margin: 30px 15px;
   position: relative;
@@ -607,6 +608,7 @@
   justify-content: center;
   border-bottom: 3px solid var(--secondary-color);
   transition: var(--transition);
+  height:100%;
 }
 
 .country-page .process-item:hover .process-content {
