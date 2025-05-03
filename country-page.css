@@ -976,4 +976,8 @@ transform: rotate(180deg);
   vertical-align: middle;
 }
 
+i.fas.fa-phone.fa-fw {
+    transform: rotate(90deg);
+}
+
 
