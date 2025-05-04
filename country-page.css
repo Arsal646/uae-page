@@ -980,6 +980,10 @@ i.fas.fa-phone.fa-fw {
     transform: rotate(90deg);
 }
 
+.elementor-element.elementor-widget.elementor-widget-spacer {
+    display: none;
+}
+
 
 
 
