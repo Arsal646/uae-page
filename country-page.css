@@ -866,10 +866,10 @@ transform: rotate(180deg);
 
 
 
-.shipping-pk-ru {
+/* .shipping-pk-ru {
   background: #f9fbfd;
 }
-
+ */
 .shipping-pk-ru .container {
   display: flex;
   flex-wrap: wrap;
