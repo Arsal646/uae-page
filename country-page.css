@@ -815,7 +815,7 @@ transform: rotate(180deg);
 }
 
 .specialty-item img {
-  width: 100%;
+  width: 50%;
   height: auto;
   margin-bottom: 15px;
 }
@@ -855,7 +855,7 @@ transform: rotate(180deg);
     font-size: 14px;
   }
   .specialty-item img {
-        max-width: 250px;
+        max-width: 100px;
     }
 }
 
@@ -979,5 +979,7 @@ transform: rotate(180deg);
 i.fas.fa-phone.fa-fw {
     transform: rotate(90deg);
 }
+
+
 
 
