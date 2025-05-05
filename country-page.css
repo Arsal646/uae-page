@@ -532,6 +532,7 @@
   justify-content: center;
   margin: 60px 0;
   position: relative;
+  row-gap:100px;
 }
 
 .country-page .process-item {
