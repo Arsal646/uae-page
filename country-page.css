@@ -991,6 +991,7 @@ i.fas.fa-phone.fa-fw {
   display:none;
 }
 
+
 .faq-section {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -1012,6 +1013,16 @@ i.fas.fa-phone.fa-fw {
   .faq-section {
     grid-template-columns: 100%;
   }
+  .faq-col-image {
+    order: -1; 
+    position: relative; 
+    top: auto;
+    top: 0;
+  }
+
+  .faq-col-content {
+    order: 0;
+  }
 }
 
 
@@ -1019,6 +1030,8 @@ i.fas.fa-phone.fa-fw {
     font-size: 16px;
     padding: 20px;
 }
+
+
 
 
 
