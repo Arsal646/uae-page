@@ -991,6 +991,35 @@ i.fas.fa-phone.fa-fw {
   display:none;
 }
 
+.faq-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  align-items: start;
+  position: relative;
+}
+
+.faq-section img{
+  width: 100%;
+}
+
+.faq-col-image{
+  position: sticky;
+  top: 40px;
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    grid-template-columns: 100%;
+  }
+}
+
+
+.country-page .accordion-button {
+    font-size: 16px;
+    padding: 20px;
+}
+
 
 
 
