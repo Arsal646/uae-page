@@ -1016,7 +1016,7 @@ i.fas.fa-phone.fa-fw {
   .faq-col-image {
     order: -1; 
     position: relative; 
-    top: auto;
+     position: sticky;
     top: 0;
   }
 
