@@ -948,6 +948,177 @@
       color: var(--secondary);
       margin-bottom: 15px;
     }
+
+
+            /* Cost Estimation Specific Styles */
+        .cost-estimation {
+            background-color: var(--bg-light);
+            position: relative;
+        }
+
+        .cost-estimation::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.03;
+            z-index: 0;
+        }
+
+        .cost-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cost-factors {
+            background-color: var(--bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: var(--space-lg);
+            height: 100%;
+        }
+
+        .cost-intro {
+            margin-bottom: var(--space-md);
+        }
+
+        .cost-intro h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: var(--space-sm);
+            position: relative;
+            display: inline-block;
+            padding-bottom: var(--space-xs);
+        }
+
+        .cost-intro h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+            border-radius: 3px;
+        }
+
+        .factor-list {
+            list-style: none;
+        }
+
+        .factor-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .factor-item:last-child {
+            border-bottom: none;
+        }
+
+        .factor-item:hover {
+            transform: translateX(10px);
+        }
+
+        .factor-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .factor-item:hover .factor-icon {
+            background-color: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        .factor-content {
+            flex: 1;
+        }
+
+        .factor-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: var(--space-xs);
+        }
+
+        .factor-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .cost-image {
+            position: relative;
+        }
+
+        .cost-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            position: sticky;
+            top: 10px;
+        }
+
+        .cost-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            font-family: inherit;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            .cost-columns {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
     </style>
 
     
@@ -1223,89 +1394,89 @@
     </section>
 
     <!-- Cost Estimation Section -->
-    <section class="section">
+    <section class="section cost-estimation">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Cost Estimation</h2>
                 <h3 class="section-subtitle">Estimate Cost of Cargo from Pakistan to Russia</h3>
             </div>
 
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title-with-icon">
-                            <i class="fas fa-weight-hanging icon"></i>
-                            <h3 class="card-title">Weight and Volume</h3>
-                        </div>
+            <div class="cost-columns">
+                <!-- Left Column: Cost Factors -->
+                <div class="cost-factors">
+                    <div class="cost-intro">
+                        <h3>Shipping Cost Factors</h3>
+                        <p>Understanding what affects your shipping costs helps you plan and budget effectively. Explore the key factors below that influence the price of shipping cargo from Pakistan to Russia.</p>
                     </div>
-                    <div class="card-content">
-                        <p>Heavier or larger cargo costs more to ship from Pakistan to Russia.</p>
-                    </div>
+
+                    <ul class="factor-list">
+                        <!-- Weight and Volume -->
+                        <li class="factor-item">
+                            <div class="factor-icon">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                            <div class="factor-content">
+                                <h4 class="factor-title">Weight and Volume</h4>
+                                <p class="factor-description">Heavier or larger cargo costs more to ship from Pakistan to Russia. Pricing is typically calculated by either actual weight or volumetric weight, whichever is greater.</p>
+                            </div>
+                        </li>
+
+                        <!-- Shipping Method -->
+                        <li class="factor-item">
+                            <div class="factor-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div class="factor-content">
+                                <h4 class="factor-title">Shipping Method</h4>
+                                <p class="factor-description">Air freight is faster but more expensive than sea freight for cargo from Pakistan to Russia. Choose based on your timeline and budget requirements.</p>
+                            </div>
+                        </li>
+
+                        <!-- Urgency -->
+                        <li class="factor-item">
+                            <div class="factor-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="factor-content">
+                                <h4 class="factor-title">Urgency</h4>
+                                <p class="factor-description">Express shipping increases the cost of cargo from Pakistan to Russia. Standard shipping offers better rates if you can plan ahead.</p>
+                            </div>
+                        </li>
+
+                        <!-- Customs Fees -->
+                        <li class="factor-item">
+                            <div class="factor-icon">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                            </div>
+                            <div class="factor-content">
+                                <h4 class="factor-title">Customs Fees</h4>
+                                <p class="factor-description">Duties and taxes in Russia affect the total cost for cargo from Pakistan to Russia. These vary based on the type and value of goods being shipped.</p>
+                            </div>
+                        </li>
+
+                        <!-- Seasonal Demand -->
+                        <li class="factor-item">
+                            <div class="factor-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="factor-content">
+                                <h4 class="factor-title">Seasonal Demand</h4>
+                                <p class="factor-description">Peak seasons can increase prices for shipping cargo from Pakistan to Russia. Planning shipments during off-peak times can result in cost savings.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title-with-icon">
-                            <i class="fas fa-ship icon"></i>
-                            <h3 class="card-title">Shipping Method</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>Air freight is faster but more expensive than sea freight for cargo from Pakistan to Russia.</p>
-                    </div>
+                <!-- Right Column: Image -->
+                <div class="cost-image">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" 
+                         alt="Shipping cost calculation and logistics planning" 
+                         title="Understanding shipping costs between Pakistan and Russia">
                 </div>
+            </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title-with-icon">
-                            <i class="fas fa-clock icon"></i>
-                            <h3 class="card-title">Urgency</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>Express shipping increases the cost of cargo from Pakistan to Russia.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title-with-icon">
-                            <i class="fas fa-file-invoice-dollar icon"></i>
-                            <h3 class="card-title">Customs Fees</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>Duties and taxes in Russia affect the total cost for cargo from Pakistan to Russia.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title-with-icon">
-                            <i class="fas fa-calendar-alt icon"></i>
-                            <h3 class="card-title">Seasonal Demand</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>Peak seasons can increase prices for shipping cargo from Pakistan to Russia.</p>
-                    </div>
-                </div>
-
-                <div class="card highlight-card">
-                    <div class="card-header">
-                        <div class="card-title-with-icon">
-                            <i class="fas fa-calculator icon"></i>
-                            <h3 class="card-title">Get a Personalized Quote</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>For an accurate cost estimate tailored to your specific shipping needs, contact our team for
-                            a personalized quote.</p>
-                        <div class="flex justify-center mt-md">
-                            <button class="btn btn-primary">Request Quote</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="cta-container">
+                <button class="btn btn-primary">Get a Personalized Quote</button>
             </div>
         </div>
     </section>
