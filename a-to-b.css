@@ -1,8 +1,7 @@
-
-.elementor-section.elementor-section-boxed>.elementor-container {
+       .elementor-section.elementor-section-boxed>.elementor-container {
     max-width: 19000px;
 }
-/* ===== VARIABLES ===== */
+       /* ===== VARIABLES ===== */
         :root {
             /* Colors */
             --primary: #1f649d;
@@ -540,6 +539,7 @@
             box-shadow: var(--shadow);
             text-align: left;
             border-bottom: 3px solid var(--secondary);
+            border: 1px solid #e4e4e4;
         }
 
         .specialty-item h3 {
@@ -610,7 +610,8 @@
         /* FAQ Section */
         .faq-section {
             display: grid;
-            grid-template-columns: 50% 50%;
+            /* grid-template-columns: 50% 50%; */
+            grid-template-columns: 100% !important;
             gap: 10px;
             align-items: start;
             position: relative;
@@ -937,4 +938,327 @@
       font-size: 2.5rem;
       color: var(--secondary);
       margin-bottom: 15px;
+    }
+
+
+            /* Cost Estimation Specific Styles */
+        .cost-estimation {
+            background-color: var(--bg-light);
+            position: relative;
+        }
+
+        .cost-estimation::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.03;
+            z-index: 0;
+        }
+
+        .cost-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cost-factors {
+            background-color: var(--bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: var(--space-lg);
+            height: 100%;
+        }
+
+        .cost-intro {
+            margin-bottom: var(--space-md);
+        }
+
+        .cost-intro h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: var(--space-sm);
+            position: relative;
+            display: inline-block;
+            padding-bottom: var(--space-xs);
+        }
+
+        .cost-intro h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary);
+            border-radius: 3px;
+        }
+
+        .factor-list {
+            list-style: none;
+        }
+
+        .factor-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .factor-item:last-child {
+            border-bottom: none;
+        }
+
+        .factor-item:hover {
+            transform: translateX(10px);
+        }
+
+        .factor-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .factor-item:hover .factor-icon {
+            background-color: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        .factor-content {
+            flex: 1;
+        }
+
+        .factor-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: var(--space-xs);
+        }
+
+        .factor-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .cost-image {
+            position: relative;
+        }
+
+        .cost-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            position: sticky;
+            top: 10px;
+        }
+
+        .cost-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            font-family: inherit;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 768px) {
+            .cost-columns {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+    .shipping-pk-ru .hero-container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .shipping-pk-ru .map-section {
+      flex: 0 0 70%;
+    }
+
+    .shipping-pk-ru .map-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .shipping-pk-ru .text-section {
+      flex: 0 0 30%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    .shipping-pk-ru .text-content {
+      position: relative;
+      left: 30%;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .shipping-pk-ru .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .shipping-pk-ru .description {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .shipping-pk-ru .buttons .btn {
+      margin-right: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .shipping-pk-ru .btn-secondary {
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+    }
+
+    .shipping-pk-ru .btn-light {
+      background-color: #f0f0f0;
+      color: var(--primary);
+      border: 1px solid #ccc;
+    }
+
+    /* Tablet adjustments */
+    @media screen and (max-width: 992px) {
+      .shipping-pk-ru .section-title {
+        font-size: 2rem;
+      }
+
+      .shipping-pk-ru .description {
+        font-size: 1rem;
+      }
+
+      .shipping-pk-ru .text-content {
+        left: -5%;
+        padding: 20px;
+      }
+    }
+
+    /* Mobile adjustments */
+    @media screen and (max-width: 768px) {
+      .shipping-pk-ru .hero-container {
+        flex-direction: column-reverse;
+        height: auto;
+      }
+
+      .shipping-pk-ru .map-section {
+        flex: none;
+        height: 250px;
+        width: 100%;
+      }
+
+      .shipping-pk-ru .map-section img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .shipping-pk-ru .text-section {
+        flex: none;
+        width: 100%;
+        padding: 15px;
+        justify-content: center;
+      }
+
+      .shipping-pk-ru .text-content {
+        position: static;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: none;
+        text-align: center;
+      }
+
+      .shipping-pk-ru .section-title {
+        font-size: 1.8rem;
+      }
+
+      .shipping-pk-ru .description {
+        font-size: 0.95rem;
+      }
+
+      .shipping-pk-ru .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .shipping-pk-ru .buttons .btn {
+        margin: 5px;
+      }
     }
