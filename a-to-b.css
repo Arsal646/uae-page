@@ -1259,4 +1259,16 @@
         margin: 5px;
       }
     }
+
+       .elementor-section.elementor-section-boxed>.elementor-container {
+                max-width: 19000px;
+            }
+            .mb-0 .section-subtitle {
+                margin-bottom: 10px !important;
+                color: var(--primary);
+                font-weight: bold;
+            }
+            .a-to-b-main .port-container fieldset {
+                margin-bottom: 50px;
+            }
     
