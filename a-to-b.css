@@ -972,6 +972,7 @@
             box-shadow: var(--shadow);
             padding: var(--space-lg);
             height: 100%;
+                 padding: 10px;
         }
 
        .a-to-b-main .cost-intro {
