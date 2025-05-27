@@ -1279,9 +1279,8 @@ body:not([class*=elementor-page-]) .site-main {
     }
 }
 
-
-.a-to-b-main .her-section{
-      margin:0;
-      padding:0;
+section.shipping-pk-ru.section.hero-section {
+    margin: 0;
+    padding: 0;
 }
     
