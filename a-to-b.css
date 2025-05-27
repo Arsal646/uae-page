@@ -1271,4 +1271,11 @@
             .a-to-b-main .port-container fieldset {
                 margin-bottom: 50px;
             }
+
+
+@media (min-width: 1200px) {
+body:not([class*=elementor-page-]) .site-main {
+        max-width: 1900px !important;
+    }
+}
     
