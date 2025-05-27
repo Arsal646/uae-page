@@ -1278,4 +1278,10 @@ body:not([class*=elementor-page-]) .site-main {
         max-width: 1900px !important;
     }
 }
+
+
+.a-to-b-main .her-section{
+      margin:0;
+      padding:0;
+}
     
