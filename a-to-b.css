@@ -1286,4 +1286,8 @@ section.shipping-pk-ru.section.hero-section {
 .elementor-widget.elementor-widget-spacer {
     display: none;
 }
+
+.section-header1.mb-0 {
+    margin-top: 35px;
+}
     
