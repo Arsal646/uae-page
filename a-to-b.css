@@ -1122,9 +1122,7 @@
         
     .shipping-pk-ru .hero-container {
       display: flex;
-      height: 100vh;
       overflow: hidden;
-      align-items: center;
       flex-wrap: nowrap;
     }
 
@@ -1283,5 +1281,9 @@ body:not([class*=elementor-page-]) .site-main {
 section.shipping-pk-ru.section.hero-section {
     margin: 0;
     padding: 0;
+}
+
+.elementor-widget.elementor-widget-spacer {
+    display: none;
 }
     
