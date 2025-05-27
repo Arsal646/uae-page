@@ -972,7 +972,6 @@
             box-shadow: var(--shadow);
             padding: var(--space-lg);
             height: 100%;
-                 padding: 10px;
         }
 
        .a-to-b-main .cost-intro {
@@ -1256,6 +1255,9 @@
      .a-to-b-main .shipping-pk-ru .buttons .btn {
         margin: 5px;
       }
+                .a-to-b-main .cost-factors {
+                 padding: 10px !important;
+        }
     }
 
        .elementor-section.elementor-section-boxed>.elementor-container {
