@@ -2,6 +2,7 @@
       .a-to-b-main .elementor-section.elementor-section-boxed>.elementor-container {
     max-width: 19000px;
 }
+
        /* ===== VARIABLES ===== */
         :root {
             /* Colors */
@@ -48,6 +49,9 @@
             max-width: 100%;
             height: auto;
         }
+.sec-heading{
+color:var(--secondary)
+}
 
         .a-to-b-main a {
             color: var(--primary);
