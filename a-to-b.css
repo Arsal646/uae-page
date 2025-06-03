@@ -6,9 +6,9 @@
        /* ===== VARIABLES ===== */
         :root {
             /* Colors */
-            --primary: #1f649d;
+            --primary: #0A3A68;
             --primary-dark: #0055aa;
-            --secondary: #ff440a;
+            --secondary: #EE1B24;
             --text: #333333;
             --text-muted: #666666;
             --bg: #ffffff;
@@ -217,6 +217,7 @@ color:var(--secondary)
             font-weight: 600;
             line-height: 1.4;
              margin:0 !important;
+                 white-space: nowrap;
         }
 
        .a-to-b-main .card-title-with-icon {
