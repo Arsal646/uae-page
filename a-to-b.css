@@ -390,6 +390,8 @@ color:var(--secondary)
 
        .a-to-b-main .accordion-button span {
             flex: 1;
+    white-space: pre-wrap;
+
         }
 
        .a-to-b-main .accordion-icon {
