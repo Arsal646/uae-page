@@ -1089,7 +1089,6 @@ color:var(--secondary)
        .a-to-b-main .btn {
             display: inline-flex;
             align-items: center;
-            padding: var(--space-sm) var(--space-lg);
             border-radius: var(--radius);
             font-weight: 500;
             cursor: pointer;
