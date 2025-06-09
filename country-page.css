@@ -61,7 +61,7 @@
   font-weight: 700;
   margin-bottom: var(--spacing-xs);
   line-height: 1.2;
-  color: #1f649d !important;
+  color: #0d4e8b !important;
 }
 
 .country-page .section-subtitle {
@@ -696,7 +696,7 @@
 
 
 :root {
-  --primary-color: #1f649d;
+  --primary-color: #0d4e8b;
   --secondary-color: #e81f25;
   --light-bg: #f8f9fa;
   --dark-text: #333333;
