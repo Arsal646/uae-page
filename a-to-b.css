@@ -53,10 +53,10 @@
 color:var(--secondary)
 }
 
-        .a-to-b-main a {
+/*         .a-to-b-main a {
             color: var(--primary);
             text-decoration: none;
-        }
+        } */
 
         /* ===== LAYOUT ===== */
        .a-to-b-main .container {
