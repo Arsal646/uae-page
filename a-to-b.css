@@ -848,7 +848,7 @@ color:var(--secondary)
             }
             
            .a-to-b-main .destinations-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(auto, 1fr);
             }
             
            .a-to-b-main .section-title {
@@ -1305,5 +1305,12 @@ section.shipping-pk-ru.section.hero-section {
 
 .a-to-b-main .factor-list {
     padding: 0;
+}
+
+.route-info p{
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
     
