@@ -864,6 +864,10 @@ color:var(--secondary)
            .a-to-b-main .card-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
+
+              #services .a-to-b-main .card-grid {
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
             
            .a-to-b-main .destinations-grid {
                 grid-template-columns: repeat(5, 1fr);
@@ -1313,9 +1317,7 @@ section.shipping-pk-ru.section.hero-section {
     padding: 0;
 }
 
-#services .a-to-b-main .card-grid {
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
+
 
 
     
