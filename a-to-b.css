@@ -1314,7 +1314,7 @@ section.shipping-pk-ru.section.hero-section {
 }
 
 #services .a-to-b-main .card-grid {
-    grid-template-columns: 1fr;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 
