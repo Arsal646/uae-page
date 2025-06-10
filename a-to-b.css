@@ -862,8 +862,8 @@ color:var(--secondary)
 
         @media (min-width: 992px) {
            .a-to-b-main .card-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 
               #services .a-to-b-main .card-grid {
    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
