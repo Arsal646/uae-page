@@ -1313,4 +1313,9 @@ section.shipping-pk-ru.section.hero-section {
     padding: 0;
 }
 
+#services .a-to-b-main .card-grid {
+    grid-template-columns: 1fr;
+}
+
+
     
