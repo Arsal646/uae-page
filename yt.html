@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Custom YouTube Player – pause‑to‑resume overlay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom YouTube Player – responsive & iPhone‑friendly</title>
 
   <!-- 1️⃣ Layout & look --------------------------------------------------->
   <style>
     :root { --bar-h: 6px; --btn: 34px; }
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{display:grid;place-items:center;min-height:100vh;background:#111;font-family:system-ui,sans-serif;}
 
-    .player-wrap{position:relative;width:100%;max-width:720px;aspect-ratio:16/9;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:#111;font-family:system-ui,sans-serif;}
+
+    /* responsive container */
+    .player-wrap{position:relative;width:100%;max-width:720px;margin:0 auto;aspect-ratio:16/9;}
+
+    /* full‑bleed on narrow viewports */
+    @media(max-width:600px){
+      :root{--btn:28px;}
+      .player-wrap{max-width:100%;}
+    }
 
     /* Disable native hover/click UI */
     .player-wrap iframe{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
@@ -23,10 +32,10 @@
 
     /* Resume overlay ---------------------------------------------------- */
     .resume-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-      background:#000000ed;color:#fff;cursor:pointer;z-index:4;opacity:0;visibility:hidden;
+      background:rgba(0,0,0,.6);color:#fff;cursor:pointer;z-index:4;opacity:0;visibility:hidden;
       transition:opacity .25s ease;}
     .resume-overlay.show{opacity:1;visibility:visible;}
-    .resume-btn{display:flex;align-items:center;gap:0.5rem;font-size:1.1rem;border:0;background:#e50914;color:#fff;padding:0.6rem 1.2rem;border-radius:9999px;cursor:pointer;user-select:none;}
+    .resume-btn{display:flex;align-items:center;gap:0.5rem;font-size:1.1rem;border:0;background:#e50914;color:#fff;padding:0.6rem 1.4rem;border-radius:9999px;cursor:pointer;user-select:none;}
 
     /* Custom controls --------------------------------------------------- */
     .controls{position:absolute;inset-inline:0;bottom:0.25rem;z-index:3;
@@ -38,8 +47,6 @@
     .btn{width:var(--btn);height:var(--btn);border:0;background:transparent;color:#fff;font-size:1rem;display:grid;place-items:center;cursor:pointer;}
     .btn svg{width:65%;height:65%;pointer-events:none;}
     .time{min-width:70px;text-align:center;}
-
-    @media(max-width:600px){:root{--btn:28px;} .controls{font-size:12px;}}
   </style>
 </head>
 <body>
@@ -88,7 +95,7 @@
         videoId: VID,
         playerVars: {
           controls: 0,
-          rel: 0,               // same‑channel only, API limit
+          rel: 0,
           modestbranding: 1,
           iv_load_policy: 3,
           playsinline: 1,
@@ -109,27 +116,41 @@
         player.seekTo(p * player.getDuration(), true);
       };
       $('vol').oninput = e => player.setVolume(e.target.value * 100);
-      $('fs').onclick  = () => {
-        const w = $('yt-wrapper');
-        document.fullscreenElement ? document.exitFullscreen() : w.requestFullscreen?.();
-      };
+      $('fs').onclick  = toggleFullscreen;
 
       timer = setInterval(updateUI, 250);
     }
 
+    /* Full‑screen helper (works on iOS Safari) ------------------------- */
+    function toggleFullscreen(){
+      const iframe = player.getIframe();
+      const doc    = document;
+
+      const isFull = doc.fullscreenElement || doc.webkitFullscreenElement;
+
+      if (isFull){
+        if (doc.exitFullscreen) doc.exitFullscreen();
+        else if (doc.webkitExitFullscreen) doc.webkitExitFullscreen();
+        return;
+      }
+
+      if (iframe.requestFullscreen) iframe.requestFullscreen();
+      else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+      else if (iframe.webkitEnterFullscreen) iframe.webkitEnterFullscreen(); // older iOS video hack
+    }
+
     function updateUI(){
       if (!ready) return;
-
       const cur = player.getCurrentTime();
       const dur = player.getDuration() || 0;
       $('cur').textContent = fmt(cur);
       $('dur').textContent = fmt(dur);
       $('progress').style.width = (cur / dur * 100) + '%';
 
-      // Pre‑empt END screen right before finish then show overlay
+      // Pre‑empt END screen: pause near the end
       if (dur && (dur - cur) < 0.4 && player.getPlayerState() === YT.PlayerState.PLAYING){
         player.pauseVideo();
-        player.seekTo(cur, false); // keep last frame
+        player.seekTo(cur, false); // prevent YouTube end‑screen
       }
     }
 
